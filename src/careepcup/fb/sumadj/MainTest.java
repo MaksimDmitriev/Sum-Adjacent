@@ -47,6 +47,13 @@ public class MainTest {
         // Worst case
         assertTrue(Main.findSum(new int[] { 1, 3, 4, 1, 0, 23 }, 23));
 
+        // a[i] is greater than k, and there is the exact sum then
+        assertTrue(Main.findSum(new int[] { 10, 8, 1 }, 9));
+        // a[i] is greater than k, and there is the exact sum then
+        assertTrue(Main.findSum(new int[] { 20, 15 }, 15));
+        // k==0
+        assertTrue(Main.findSum(new int[] { 20, 15 }, 0));
+
     }
 
 }
