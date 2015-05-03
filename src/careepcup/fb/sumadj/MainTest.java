@@ -22,7 +22,7 @@ public class MainTest {
         // The elements are at the beginning
         assertTrue(Main.findSum(new int[] { 10, 4, 4, 10, 2, 16 }, 14));
 
-        // The elements are at the middle
+        // The elements are in the middle
         assertTrue(Main.findSum(new int[] { 1, 4, 4, 10, 2, 16 }, 14));
 
         // The elements are at the end

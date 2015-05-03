@@ -15,14 +15,13 @@ public class Main {
      * [1, 2, 3, 4, 50, 23] and k == 23
      */
     static boolean findSum(int[] array, int k) {
-        for (int i = 0, start = 0, sum = 0; i < array.length;) {
+        for (int i = 0, start = 0, sum = 0; i < array.length; i++) {
             if (array[i] > k) {
-                start = ++i;
+                start = i + 1;
                 sum = 0;
                 continue;
             }
             sum += array[i];
-            i++;
             while (sum > k) {
                 sum -= array[start];
                 start++;
